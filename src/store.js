@@ -1,8 +1,7 @@
-// import { configure } from "@testing-library/react";
-// import "./features/cart/cartSlice";
-// import cartReducer from "./features/cart/cartSlice";
-// export const store = configure({
-//   reducer: {
-//     cart: cartReducer,
-//   },
-// });
+import { configureStore } from "@reduxjs/toolkit";
+import cartReducer from "./features/cart/cartSlice";
+export const store = configureStore({
+  reducer: {
+    cart: cartReducer,
+  },
+});
